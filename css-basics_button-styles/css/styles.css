@@ -1,0 +1,53 @@
+/* Please scroll down to the start of your exercise! */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+section {
+  background-color: lemonchiffon;
+  display: grid;
+  place-items: center;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+button {
+  background-color: white;
+  padding: 8px 25px;
+}
+
+/* Your exercise starts here */
+
+/* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
+
+.button1 {
+  border-radius: 6px;
+  border-width: 12px;
+  border-color: rgb(165, 41, 41);
+}
+
+.button2 {
+  color: chartreuse;
+  background-color: black;
+}
+
+.button3 {
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.button4 {
+  box-shadow: 12px 12px lightgreen;
+}
+
+/* Feel free to play around with other properties, as well. */
