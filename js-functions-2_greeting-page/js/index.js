@@ -39,12 +39,11 @@ function getGreeting() {
 function getDayColor() {
   // Code here
   const whatDayIsToday = new Date().getDay();
-
   if (whatDayIsToday == 1) {
     return (backgroundColor = "darkgrey");
   } else if (whatDayIsToday > 1 && whatDayIsToday < 6) {
     return (backgroundColor = "lightblue");
-  } else if ((whatDayIsToday = 6 | 0)) {
+  } else if (whatDayIsToday == 6 || 0) {
     return (backgroundColor = "hotpink");
   }
 }
