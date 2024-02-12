@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h2>Create your Personal Profile</h2>
+    <h2 id="title">Create your Personal Profile</h2>
     <section>
-      <fieldset>
-        <p>
+      <form aria-labelledby="title">
+        <p id="description1">
           We want to get to know you! Please enter your personal information.
         </p>
-        <fieldset>
+        <fieldset aria-describedby="description1">
           <legend>Personal Information</legend>
           <label for="firstNameField">First Name:</label>
           <input type="text" name="firstName" id="firstNameField" required />
@@ -26,11 +26,11 @@
           <input type="date" name="birthday" id="birthdayField" required />
         </fieldset>
 
-        <p>
+        <p id="description2">
           Can you tell us a little bit more? We want to annoy you with unwanted
           ads.
         </p>
-        <fieldset>
+        <fieldset aria-describedby="description2">
           <legend>Further Information</legend>
           <label for="colorRed">Favourite Color</label>
           <input
@@ -50,7 +50,7 @@
           </select>
         </fieldset>
         <button type="submit">Submit</button>
-      </fieldset>
+      </form>
     </section>
   </body>
 </html>
