@@ -41,16 +41,18 @@ console.clear();
 
 // --v-- your code below this line --v--
 const url = "https://swapi.dev/api/people";
-async function fetch() {
+async function fetchData() {
   const response = await fetch(url);
   const json = await response.json();
   return json.results;
 }
-fetch();
 
 async function fetchDataAndRender() {
-  const cards = await Card(fetch());
-  const characterCard = cards.forEach((card) => renderElement(card));
-  return characterCard;
+  const allCharacters = await fetchData();
+
+  allCharacters.forEach((allCharacter) => {
+    const card = Card(allCharacter);
+    renderElement(card);
+  });
 }
 fetchDataAndRender();
