@@ -17,6 +17,9 @@ const results = await fetchData();
 const nameOfIndex0 = results[0].name;
 console.log(nameOfIndex0);
 
+const allNames = results.map((result) => result.name);
+console.log(allNames);
+
 // - Bonus: Can you log the eye color of R2-D2?
 const eyeColorOfR2D2 = results[2].eye_color;
 console.log(eyeColorOfR2D2);
