@@ -2,9 +2,9 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
-  return <Smiley isHappy={false} />;
+  return <Smiley isHappy={true} />;
 }
 
 function Smiley({ isHappy }) {
-  return isHappy ? ":)" : ":(";
+  return isHappy ? "😁" : "☹️";
 }
