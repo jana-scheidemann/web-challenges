@@ -18,7 +18,7 @@ export default function App() {
     <div className="container">
       <h1>Place a Table Reservation</h1>
       <Counter onAdd={handleAdd} onSubtract={handleSubtract} />
-      <p>You are going to reserve a table for {setPeople} people.</p>
+      <p>You are going to reserve a table for {people} people.</p>
     </div>
   );
 }

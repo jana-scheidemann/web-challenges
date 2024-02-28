@@ -1,4 +1,4 @@
-export default function Counter(onSubtract, onAdd) {
+export default function Counter({ onSubtract, onAdd }) {
   // const [people, setPeople] = useState(0);
   return (
     <>
