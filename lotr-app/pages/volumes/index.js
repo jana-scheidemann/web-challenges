@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { volumes } from "@/lib/data";
 import { useRouter } from "next/router";
+import styled from "styled-components";
 
 export default function Volumes() {
   function getRandomVolume(volumes) {
@@ -13,7 +14,18 @@ export default function Volumes() {
     const randomVolume = getRandomVolume(volumes);
     router.push(`/volumes/${randomVolume.slug}`);
   }
+  const Button = styled.button`
+    padding: 10px;
+    color: brown;
+    background-color: yellowgreen;
+    border-radius: 10%;
+    font-weight: bold;
 
+    &:hover {
+      color: yellowgreen;
+      background-color: brown;
+    }
+  `;
   return (
     <>
       <Link href="/">to Homepage</Link>
@@ -27,7 +39,7 @@ export default function Volumes() {
           );
         })}
       </ul>
-      <button onClick={handleSubmit}>go to random Volume</button>
+      <Button onClick={handleSubmit}>go to random Volume</Button>
     </>
   );
 }
