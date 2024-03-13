@@ -1,0 +1,11 @@
+import { getAllProducts } from "@/services/productServices";
+
+export default function handler(request, response) {
+  response.status(200).json(getAllProducts());
+}
+
+// ALTERNATIVE:
+// export default function handler(request, response) {
+//   const products = getAllProducts()
+//   response.status(200).json(products);
+// }
